@@ -1,0 +1,122 @@
+body{
+  margin: auto;
+  padding: auto;
+  background-color: rgb(152, 168, 182);
+}
+.bg {
+  background: url(img/bluebg.jpg) no-repeat center center/cover, 
+              linear-gradient(45deg, red, yellow, rgb(77, 248, 9), rgb(155, 48, 204), pink, blue);
+  text-align: center;
+  color: white;
+}
+#jumbotronn h1,
+#jumbotronn p {
+  font-size: 28px; /* Adjust the font size as needed */
+  background: linear-gradient(45deg, red, yellow, rgb(77, 248, 9), rgb(155, 48, 204), pink, blue);
+  color: transparent; /* Make text color transparent so the gradient is visible */
+  background-clip: text; /* Clip the background to the text */
+  -webkit-background-clip: text; /* For Safari compatibility */
+  
+  /* Make sure the background is large enough for animation */
+  background-size: 200% 200%; /* Make the gradient large to move smoothly */
+  
+  /* Add the animation properties */
+  animation-name: gradient-animation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+/* Define the animation for the gradient movement */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%; /* Start at the left */
+  }
+  100% {
+    background-position: 100% 50%; /* End at the right */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for active scrollspy link */
+.navbar-nav .nav-link.active {
+  border-top: 50px;
+  color: rgb(255, 8, 8) !important; /* Active link color */
+  transform: scale(1.3);
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
+.container{
+  text-align: center;
+}
+
+.cardcard{
+border-bottom: red 4px solid;
+}
+
+.cards{
+  background-color: rgb(233, 233, 233);
+  box-shadow: 3px 4px 9px 5px rgb(80, 89, 218);
+
+}
+
+.cardhover{
+  box-shadow: 1px 1px 1px 2px rgb(0, 0, 0);
+  transition: 0.3s ease-in;
+}
+.cardhover:hover{
+  transform: rotateY(15deg);
+  box-shadow: 1px 1px 3px 3px rgb(85, 33, 228);
+}
+
+.footerrr{
+margin: auto 0;
+width: auto;
+background-color:rgb(150, 161, 161);
+text-align: center;
+}
+.footerrr h3{
+  padding-top: 150px;
+}
+.appstoreicon{
+  border-radius: 15px; 
+  width: 200px;
+  margin: auto 0;
+  /* background-color: transparent !important;
+  /* mix-blend-mode: multiply;  */  
+}
+
+.appstoreicon:hover{
+  transition: ease-in-out 0.1s;
+  transform: rotateY(10deg);
+  transform: scale(0.9);
+}
+
+#icons2{
+  border-radius: 20%;
+}
